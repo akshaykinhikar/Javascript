@@ -38,6 +38,9 @@
   
   
   <p>Bind</p>
+
+  <li>Used in polymorphisom - overloading and overriding</li>
+  <li>we use  class B extends class A and use bind to pass extra params</li>
   
   ```javascript
   var person = {
