@@ -2,7 +2,8 @@
 ##### Call Vs Bind Vs Apply       
 
 <details><summary><b>Answer</></summary>
-  
+  <p>Call bind apply is used to pass context and bind value to javascript methods, objects</p>
+  <p>When we want to send extra parameters to function</p>
   <p>Call</p>
   
   ```javascript
