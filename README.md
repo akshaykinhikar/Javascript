@@ -1,4 +1,27 @@
 
+
+  ##### Question
+  ```javascript
+function myFun() {
+    return "lorem"
+}
+
+const mySecFun = () => {
+    return "lorem"
+}
+
+console.log(myFun.prototype)
+console.log(mySecFun.prototype)
+  ```
+  <details><summary><b>Answer</></summary>
+
+  
+  ```javascript
+{constructor: ƒ}
+undefined
+  ```
+  </details>
+ 
  ##### `__proto__`  vs `prototype`
   <details><summary><b>Answer</></summary>
 
@@ -7,8 +30,6 @@
   <li>prototype: is used to declare prototype on Object, function etc</li>
   </ul>  
   </details>
-
-
 
 
 ##### What is prototype chaining...
