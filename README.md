@@ -400,6 +400,99 @@ Uncaught TypeError TypeError: pet.bark is not a function
   ```
   </details>
 
+  
+
+
+  ##### How do you set / get prototype of object
+  <details><summary><b>Answer</></summary>
+
+  
+  ```javascript
+function Person() {};
+
+const moreDetails = {lorem: 'ipsome'} 
+
+// Way 1
+Person.prototype.details = function() {}
+
+const p1 = new Person();
+console.log("p1 Prototype is " + JSON.stringify(p1.__proto__))
+
+// Way 2
+const obj = {};
+const parent = { foo: 'bar' };
+
+console.log(obj.foo);
+// Expected output: undefined
+
+Object.setPrototypeOf(obj, parent);
+
+console.log(obj.foo);
+// Expected output: "bar"
+
+console.log(Object.getPrototypeOf(obj))
+
+//OutPut
+"p1 Prototype is {}"
+undefined
+"bar"
+{
+  foo: "bar"
+}
+  ```
+  </details>
+
+  
+
+
+  ##### How would you create object with prototype
+
+  <details><summary><b>Answer</></summary>
+
+  
+  ```javascript
+const user = {
+name: 'user'
+}
+
+const user1 = Object.create(user);
+
+console.log(user1.name); // user
+  ```
+  </details>
+
+
+
+
+  ##### Question
+  ```javascript
+
+const firstPromise = new Promise((resolve, reject) => {
+/* setTimeout(resolve, 500, 'one'); */
+setTimeout(() => {
+		resolve('one')
+	}, 500)
+});
+
+const secondPromise = new Promise((resolve, reject) => {
+/* setTimeout(resolve, 500, 'two'); */
+setTimeout(() => {
+		resolve('two')
+	}, 100)
+});
+
+Promise.race([firstPromise, secondPromise]).then(res => console.log(res))
+
+
+  ```
+  <details><summary><b>Answer</></summary>
+
+  
+  ```javascript
+two
+  ```
+  </details>
+
 
 
   
@@ -450,4 +543,5 @@ Uncaught TypeError TypeError: pet.bark is not a function
 <H3>References: </H3>
 <ul>
 <li>https://www.youtube.com/playlist?list=PLWlZdiSk22n9-gcCsz-AZ8SkN-92W_599</li>
+<li>https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/setPrototypeOf</li>
 </ul>
