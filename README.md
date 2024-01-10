@@ -1,4 +1,57 @@
+#### Design Pattern
 
+<details><summary>Answer</summary>
+	<p>Creational Design Patterns</p>
+<ul> 
+	<li>Singleton Pattern</li>
+	<li>Factory Method Pattern</li>
+	<li>Abstract Factory Pattern</li>
+	<li>Builder Pattern</li>
+	<li>Prototype Pattern</li>
+</ul>   
+
+<p>Structural Design Patterns</p>
+<ul>
+	<li>Adapter Pattern</li>
+	<li>Decorator Pattern</li>
+	<li>Facade Pattern</li>
+	<li>Proxy Pattern</li>
+</ul>
+
+<p>Behavioral Design Patterns</p>
+<ul>
+	<li>Chain of Responsibility Pattern</li>
+	<li>Iterator Pattern</li>
+	<li>Observer Pattern</li>
+</ul>
+
+<a href="https://www.freecodecamp.org/news/javascript-design-patterns-explained/"> Referance</a>
+</details>
+
+
+##### What is use of Reduce, set, waek set   
+<details>
+<summary>Answer</summary>   
+<p>The reduce() method of Array instances executes a user-supplied "reducer" callback function on each element of the
+array, in order, passing in the return value from the calculation on the preceding element. The final result of
+running the reducer across all elements of the array is a single value.</p>
+
+```javascript
+
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce(
+	(accumulator, currentValue) => accumulator + currentValue,
+	initialValue,
+);
+
+console.log(sumWithInitial);
+// Expected output: 10
+```
+
+</details>
 
   ##### Question
   ```javascript
