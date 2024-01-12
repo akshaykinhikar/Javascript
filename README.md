@@ -1,3 +1,29 @@
+
+##### Question 
+```javascript
+ test =  {
+    name:  "Akshay",
+    arrowData :  () => {console.log(this)},
+    normalData :  function() {console.log(this)}
+    
+}
+
+test.arrowData()
+
+test.normalData()
+```
+<details>
+<summary>Answer</summary>  
+
+```javascript
+
+Window {0: Window, window: Window, self: Window, document: document, name: '', location: Location, …}
+VM455:4 {name: 'Akshay', arrowData: ƒ, normalData: ƒ}
+
+```
+</details>
+
+
 #### What is micro frontend
 
 <details><summary>Answer</summary>
