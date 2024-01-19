@@ -1,3 +1,23 @@
+##### Relace all occurances of name with value 'XYZ'
+```javascript
+let data = {
+    name: 'lorem', 
+    age: 12,
+    details: {
+        name: 'lorem',
+        occupation: 'Private Sector',
+        address: {
+            name: 'lorem',
+            society: 'lorem society'
+
+        }
+    }
+}
+```
+
+<details>
+<summary>Answer</summary>  
+</details>
 
 ##### Question 
 ```javascript
